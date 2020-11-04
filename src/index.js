@@ -7,7 +7,7 @@ const { Step } = Steps;
 
 function getTotalPoints() {
   // get total points 
-  return 134; // return the total amount of points the banker has (this is a fake total)
+  return 200; // return the total amount of points the banker has (this is a fake total)
 }
 
 function getCurrentLevel() {
@@ -53,7 +53,7 @@ ReactDOM.render(
     {getCurrentLevel() === 0 ? <Step title="Level 1" description={getDescription()}/> : <Step title="Level 1"/>}
     {getCurrentLevel() === 1 ? <Step title="Level 2" description={getDescription()}/> : <Step title="Level 2"/>}
     {getCurrentLevel() === 2 ? <Step title="Level 3" description={getDescription()}/> : <Step title="Level 3"/>}
-    {getCurrentLevel() === 3 ? <Step title="Level 4" description={getDescription()}/> : <Step title="Level 4"/>}
+    <Step title="Level 4"/> 
   </Steps>
   </div>,
   document.getElementById("root")
